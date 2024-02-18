@@ -34,31 +34,37 @@
       </div>
     </div>
     <div class="bg-dark text-center">
+        <table class="table col-lg-8 border">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Email</th>
+              <th scope="col">Telefone</th>
+              <th scope="col">Endereço</th>
+              <th scope="col">Detalhes</th>
+            </tr>
+          </thead>
+          <tbody id="table-Body-Full-list">
+          </tbody>
+        </table>
       <div class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto">
-        <p>
-          O site deverá ter uma área onde serão apresentados todos os
-          receptores de doações, que podem ser ONG's, instituições de
-          caridade, etc. Estes receptores devem ser apresentados de duas
-          formas: Listagem (todos) e individualmente com mais detalhes. Além
-          da exibição, implemente também um formulário de cadastro de
-          receptores; Os seguintes campos são obrigatórios para o cadastro e
-          exibição: ID (identicador único), nome do receptor, descrição,
-          e-mail, telefone, endereço e imagem
-        </p>
-      </div>
-      <div class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto">
-        <label for="receptores">Receptores</label>
-        <select name="receptores" id="receptores">
-          <option value="" selected>Selecione um receptor</option>
-          <option value="ong">ONG</option>
-          <option value="escola">Escola</option>
-          <option value="hospital">Hospital</option>
-          <option value="receptor4">Receptor 4</option>
-        </select>
-        <div id="show-donator-info"></div>
+        <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+
+              <th scope="col">Nome</th>
+              <th scope="col">Email</th>
+              <th scope="col">Telefone</th>
+              <th scope="col">Endereço</th>
+            </tr>
+          </thead>
+          <tbody id="table-Body-Details">
+          </tbody>
+        </table>
       </div>
       <a href="/public/adicionarReceptor.html" type="button" class="btn btn-light text-decoration-none my-4 fs-5">Adicionar Receptores</a>
-      </div>
+    </div>
   </div>
   <div class="container">
     <footer
