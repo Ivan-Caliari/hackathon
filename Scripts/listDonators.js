@@ -11,6 +11,7 @@ function GetDonator(id) {
         <td>${objDonator.Email}</td>
         <td>${objDonator.Phone}</td>
         <td>${objDonator.Adrress}</td>
+        <td>Alguma descrição mais aprofundada</td>
       </td>
       </tr>`
 }
