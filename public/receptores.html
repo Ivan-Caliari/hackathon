@@ -49,7 +49,7 @@
     <div style="height: 100vh">
       <div class="w-100 d-inline-block p-3 bg-dark text-white">
         <div class="text-center">
-          <h1>Institucional</h1>
+          <h1>Receptores</h1>
           <p>descriçao do site</p>
         </div>
       </div>
@@ -58,10 +58,31 @@
           class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto"
         >
           <p>
-            aqui vai ficar as informaçoes instutucionais: "O site deverá ter uma
-            área institucional onde contenham informações descritivas sobre a
-            plataforma como, por exemplo, sua motivação, atuação e história;"
+            O site deverá ter uma área onde serão apresentados todos os
+            receptores de doações, que podem ser ONG's, instituições de
+            caridade, etc. Estes receptores devem ser apresentados de duas
+            formas: Listagem (todos) e individualmente com mais detalhes. Além
+            da exibição, implemente também um formulário de cadastro de
+            receptores; Os seguintes campos são obrigatórios para o cadastro e
+            exibição: ID (identicador único), nome do receptor, descrição,
+            e-mail, telefone, endereço e imagem
           </p>
+        </div>
+        <div
+          class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto"
+        >
+          <label for="receptores">Receptores</label>
+          <select name="receptores" id="receptores">
+            <option value="" selected>Selecione um receptor</option>
+            <option value="ong">ONG</option>
+            <option value="escola">Escola</option>
+            <option value="hospital">Hospital</option>
+            <option value="receptor4">Receptor 4</option>
+          </select>
+          <div id="show-donator-info"></div>
+        </div>
+        <div class="text-center">
+            <button type="button" class="btn btn-light" ><a style="text-decoration: none" href="/public/adicionarReceptor.html">Adicionar Receptores</a></button>
         </div>
       </div>
     </div>
@@ -106,5 +127,6 @@
         </ul>
       </footer>
     </div>
+    <script src="/Scripts/listDonators.js"></script>
   </body>
 </html>

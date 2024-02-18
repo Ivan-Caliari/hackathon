@@ -16,7 +16,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative">
       <a class="navbar-brand" href="#">Navbar</a>
       <button
         class="navbar-toggler"
@@ -49,23 +49,33 @@
     <div style="height: 100vh">
       <div class="w-100 d-inline-block p-3 bg-dark text-white">
         <div class="text-center">
-          <h1>Institucional</h1>
-          <p>descriçao do site</p>
+          <h1>Depoimentos</h1>
+          <p>O site deverá ter uma área de depoimentos dos usuários. Cada depoimento deverá ter uma
+            identicação deste usuário e seu relato;</p>
         </div>
       </div>
       <div class="bg-dark">
-        <div
-          class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto"
-        >
-          <p>
-            aqui vai ficar as informaçoes instutucionais: "O site deverá ter uma
-            área institucional onde contenham informações descritivas sobre a
-            plataforma como, por exemplo, sua motivação, atuação e história;"
-          </p>
-        </div>
+            <div class="container p-5">
+                <div class="col-lg-8 p-3 mx-auto text-bg-dark rounded-3">
+                    <form method="post" class="col-md-8 mx-auto">
+                        <h2>Depoimento</h2>
+        
+                        <label for="subject" class="form-label">Nome</label>
+                        <input type="text" class="form-control mb-3" id="subject">
+
+                        <label for="subject" class="form-label">E-mail</label>
+                        <input type="email" class="form-control mb-3" id="subject">
+
+                        <label for="message" class="form-label">Mensagem:</label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-control textarea"></textarea><br>
+        
+                        <button type="button" id="send" class="d-flex btn btn-outline-light mx-md-auto ms-auto">Enviar</button>
+                    </form>
+                </div>
+            </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container position-relative">
       <footer
         class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-fixed-bottom"
       >
