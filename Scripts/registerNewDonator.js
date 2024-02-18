@@ -13,7 +13,8 @@ function SaveOnDB() {
         "Phone": Phone,
         "Adrress": Adrress
     }
+    localStorage.setItem(Receptor, JSON.stringify(DonatorOBJ))
 
-    localStorage.setItem(id, JSON.stringify(DonatorOBJ))
+    alert("cadastrado com sucesso")
 }
 
