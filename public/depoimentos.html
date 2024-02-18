@@ -10,49 +10,50 @@
   <title>Document</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light position-relative">
-    <a class="navbar-brand" href="#">Navbar</a>
+<body class="text-bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark position-relative p-3">
+    <a class="navbar-brand" href="#">
+      <i class="bi bi-person-fill"></i>
+      Depoimentos
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <div class="navbar-nav">
-        <a href="/public/home.html" class="nav-item nav-link active">Home</a>
+        <a href="/public/home.html" class="nav-item nav-link">Home</a>
         <a href="/public/contato.html" class="nav-item nav-link">Contato</a>
         <a href="/public/institucional.html" class="nav-item nav-link">Institucional</a>
-        <a href="/public/depoimentos.html" class="nav-item nav-link">Depoimentos</a>
-        <a href="/public/receptores.html" class="nav-item nav-link">Redeptores</a>
+        <a href="/public/depoimentos.html" class="nav-item nav-link active">Depoimentos</a>
+        <a href="/public/receptores.html" class="nav-item nav-link">Receptores</a>
       </div>
     </div>
   </nav>
-  <div style="height: 100vh">
-    <div class="w-100 d-inline-block p-3 bg-dark text-white">
-      <div class="text-center">
-        <h1>Depoimentos</h1>
-        <p>O site deverá ter uma área de depoimentos dos usuários. Cada depoimento deverá ter uma
-          identicação deste usuário e seu relato;</p>
-      </div>
+  <div class="w-100 d-inline-block p-3 text-white">
+    <div class="text-center">
+      <h1>Depoimentos</h1>
+      <p>O site deverá ter uma área de depoimentos dos usuários. Cada depoimento deverá ter uma
+        identicação deste usuário e seu relato;</p>
     </div>
-    <div class="bg-dark">
-      <div class="container p-5">
-        <div class="col-lg-8 p-3 mx-auto text-bg-dark rounded-3">
-          <form method="post" class="col-md-8 mx-auto">
-            <h2>Depoimento</h2>
+  </div>
+  <div class="bg-light">
+    <div class="container p-5">
+      <div class="col-lg-8 p-3 mx-auto text-bg-dark rounded-3">
+        <form method="post" class="col-md-8 mx-auto">
+          <h2>Depoimento</h2>
 
-            <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control mb-3" id="nome">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control mb-3" id="nome">
 
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" class="form-control mb-3" id="email">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control mb-3" id="email">
 
-            <label for="message" class="form-label">Mensagem:</label>
-            <textarea name="message" id="message" cols="30" rows="10" class="form-control textarea"></textarea><br>
+          <label for="message" class="form-label">Mensagem:</label>
+          <textarea name="message" id="message" cols="30" rows="10" class="form-control textarea"></textarea><br>
 
-            <button type="button" id="send" class="d-flex btn btn-outline-light mx-md-auto ms-auto">Enviar</button>
-          </form>
-        </div>
+          <button type="button" id="send" class="d-flex btn btn-outline-light mx-md-auto ms-auto">Enviar</button>
+        </form>
       </div>
     </div>
   </div>
@@ -60,29 +61,18 @@
     <footer
       class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-fixed-bottom">
       <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"><svg class="bi" width="30"
-            height="24">
+        <a href="/" class="mb-3 me-2 mb-md-0 lh-1"><svg class="bi" width="30" height="24">
             <use xlink:href="#bootstrap"></use>
           </svg></a>
-        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        <span class="mb-3 mb-md-0 ">© 2022 Company, Inc</span>
       </div>
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-whatsapp"></i></a>
-        </li>
-        <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-facebook"></i></a>
-        </li>
-        <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-instagram"></i></a>
-        </li>
-        <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-linkedin"></i></a>
-        </li>
-        <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-twitter"></i></a>
-        </li>
-      </ul>
+      <div class="nav col-md-4 justify-content-end list-unstyled text-decoration-none d-flex">
+        <a href="#" class="ms-3 fs-5 p-1 text-white"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="ms-3 fs-5 p-1 text-white"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="ms-3 fs-5 p-1 text-white"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="ms-3 fs-5 p-1 text-white"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="ms-3 fs-5 p-1 text-white"><i class="bi bi-twitter"></i></a>
+      </div>
     </footer>
   </div>
 </body>
