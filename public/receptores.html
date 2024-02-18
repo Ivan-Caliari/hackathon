@@ -7,84 +7,92 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <title>Document</title>
+  <title>Receptores</title>
 </head>
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark text-bg-dark p-3">
+    <a class="navbar-brand" href="#">
+      <i class="bi bi-cart"></i>
+      Receptores
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <div class="navbar-nav"></div>
-      <a href="/public/home.html" class="nav-item nav-link active">Home</a>
+    <div class="collapse navbar-collapse navbar-nav" id="navbarNav">
+      <a href="/public/home.html" class="nav-item nav-link">Home</a>
       <a href="/public/contato.html" class="nav-item nav-link">Contato</a>
       <a href="/public/institucional.html" class="nav-item nav-link">Institucional</a>
       <a href="/public/depoimentos.html" class="nav-item nav-link">Depoimentos</a>
-      <a href="/public/receptores.html" class="nav-item nav-link">Redeptores</a>
+      <a href="/public/receptores.html" class="nav-item nav-link active">Receptores</a>
     </div>
   </nav>
-  <div style="height: 100vh">
-    <div class="w-100 d-inline-block p-3 bg-dark text-white">
-      <div class="text-center">
-        <h1>Receptores</h1>
-        <p>descriçao do site</p>
-      </div>
+  <div class="w-100 d-inline-block p-3 bg-light">
+    <div class="text-center">
+      <h1>Receptores</h1>
+      <p>descriçao do site</p>
     </div>
-    <div class="bg-dark text-center">
-      <div class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto">
-        <p>
-          O site deverá ter uma área onde serão apresentados todos os
-          receptores de doações, que podem ser ONG's, instituições de
-          caridade, etc. Estes receptores devem ser apresentados de duas
-          formas: Listagem (todos) e individualmente com mais detalhes. Além
-          da exibição, implemente também um formulário de cadastro de
-          receptores; Os seguintes campos são obrigatórios para o cadastro e
-          exibição: ID (identicador único), nome do receptor, descrição,
-          e-mail, telefone, endereço e imagem
-        </p>
-      </div>
-      <div class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto">
-        <label for="receptores">Receptores</label>
-        <select name="receptores" id="receptores">
-          <option value="" selected>Selecione um receptor</option>
-          <option value="ong">ONG</option>
-          <option value="escola">Escola</option>
-          <option value="hospital">Hospital</option>
-          <option value="receptor4">Receptor 4</option>
-        </select>
-        <div id="show-donator-info"></div>
-      </div>
-      <a href="/public/adicionarReceptor.html" type="button" class="btn btn-light text-decoration-none my-4 fs-5">Adicionar Receptores</a>
-      </div>
+  </div>
+  <div class="text-center bg-light pt-3">
+    <div class="col-lg-8 lead d-flex mx-auto m-3">
+      <p>
+        O site deverá ter uma área onde serão apresentados todos os
+        receptores de doações, que podem ser ONG's, instituições de
+        caridade, etc. Estes receptores devem ser apresentados de duas
+        formas: Listagem (todos) e individualmente com mais detalhes. Além
+        da exibição, implemente também um formulário de cadastro de
+        receptores; Os seguintes campos são obrigatórios para o cadastro e
+        exibição: ID (identicador único), nome do receptor, descrição,
+        e-mail, telefone, endereço e imagem
+      </p>
+    </div>
+    <div class="col-lg-8 border p-4 rounded-3 text-bg-dark fs-4 d-inline-block mx-auto mb-3">
+      <form class="mx-auto col-lg-10 text-start row">
+        <div class="col-lg-8 col-auto">
+          <label for="receptores" class="form-label">Receptores</label>
+          <select name="receptores" id="receptores" class="form-select">
+            <option disabled selected>Selecione um receptor</option>
+            <option value="ong">ONG</option>
+            <option value="escola">Escola</option>
+            <option value="hospital">Hospital</option>
+            <option value="receptor4">Receptor 4</option>
+          </select>
+        </div>
+        <div class="col-4">
+          <a href="/public/adicionarReceptor.html" type="button" class="btn btn-light text-decoration-none my-4 fs-5">
+            <i class="bi bi-plus-circle"></i>
+            Adicionar Receptores
+          </a>
+        </div>
+      </form>
+      <div id="show-donator-info"></div>
+    </div>
   </div>
   <div class="container">
     <footer
       class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-fixed-bottom">
       <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"><svg class="bi" width="30"
-            height="24">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-decoration-none lh-1"><svg class="bi" width="30" height="24">
             <use xlink:href="#bootstrap"></use>
           </svg></a>
-        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+        <span class="mb-3 mb-md-0 text-white">© 2022 Company, Inc</span>
       </div>
       <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
         <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-whatsapp"></i></a>
+          <a href="#" class="text-decoration-none fs-5 p-1 text-white"><i class="bi bi-whatsapp"></i></a>
         </li>
         <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-decoration-none fs-5 p-1 text-white"><i class="bi bi-facebook"></i></a>
         </li>
         <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-decoration-none fs-5 p-1 text-white"><i class="bi bi-instagram"></i></a>
         </li>
         <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-decoration-none fs-5 p-1 text-white"><i class="bi bi-linkedin"></i></a>
         </li>
         <li class="ms-3">
-          <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-decoration-none fs-5 p-1 text-white"><i class="bi bi-twitter"></i></a>
         </li>
       </ul>
     </footer>
