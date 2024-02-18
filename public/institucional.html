@@ -1,147 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="./home.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contato.html">Contato</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Institucional</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">implementaçoes futuras</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <div style="height: 100vh">
-      <div class="w-100 d-inline-block p-3 bg-dark text-white">
-        <div class="text-center">
-          <h1>pagina inicial nome do site</h1>
-          <p>descriçao do site</p>
-        </div>
-      </div>
 
-      <div class="bg-dark">
-        <div
-          class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-          exercitationem perspiciatis eum sit fugiat culpa quaerat doloribus
-          consequuntur, nemo quos ducimus, mollitia porro quasi libero
-          distinctio sapiente reiciendis? Architecto, laboriosam!
-        </div>
-        <div class="w-100 d-inline-block p-3 bg-dark text-center">
-          <img
-            src="/assets/img/preferencial-horizontal-branca.png"
-            alt="reprograme-se"
-            width="400"
-            height="200"
-          />
-          <img
-            src="/assets/img/ifes-vertical-branco.png"
-            alt=""
-            width="400"
-            height="200"
-          />
-          <img
-            src="/assets/img/vertical-negativa.png"
-            alt=""
-            width="400"
-            height="200"
-          />
-        </div>
-        <div
-          class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto"
-        >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-          exercitationem perspiciatis eum sit fugiat culpa quaerat doloribus
-          consequuntur, nemo quos ducimus, mollitia porro quasi libero
-          distinctio sapiente reiciendis? Architecto, laboriosam! Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Laudantium quasi, culpa
-          dicta sequi velit cumque voluptas a sit dolorum nemo quas asperiores
-          officiis qui animi deleniti adipisci doloribus similique sunt! Lorem
-          ipsum dolor sit amet consectetur adipisicing elit. Delectus quos nihil
-          quibusdam earum. Labore tempora ipsum et, dicta inventore eaque modi
-          voluptatibus beatae dignissimos nulla voluptatum a totam nostrum.
-          Ratione perferendis dolores quia optio, esse beatae non recusandae
-          quasi sit quos? Odio atque laborum excepturi consectetur, nisi esse
-          obcaecati impedit?
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3">
+    <a class="navbar-brand" href="#">
+      <i class="bi bi-person-fill"></i>
+      Navbar
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="navbar-nav">
+        <a href="./home.html" class="nav-item nav-link">Home</a>
+        <a href="./contato.html" class="nav-item nav-link">Contato</a>
+        <a href="./institucional.html" class="nav-item nav-link active">Institucional</a>
+        <a href="#" class="nav-item nav-link disabled">Implementaçoes futuras</a>
       </div>
     </div>
-    <div class="container">
-      <footer
-        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-fixed-bottom"
-      >
-        <div class="col-md-4 d-flex align-items-center">
-          <a
-            href="/"
-            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-            ><svg class="bi" width="30" height="24">
-              <use xlink:href="#bootstrap"></use></svg></a>
-          <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
-        </div>
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3">
-            <a href="#" class="text-decoration-none fs-5 p-1 text-black"
-              ><i class="bi bi-whatsapp"></i
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a href="#" class="text-decoration-none fs-5 p-1 text-black"
-              ><i class="bi bi-facebook"></i
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a href="#" class="text-decoration-none fs-5 p-1 text-black"
-              ><i class="bi bi-instagram"></i
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a href="#" class="text-decoration-none fs-5 p-1 text-black"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-          </li>
-          <li class="ms-3">
-            <a href="#" class="text-decoration-none fs-5 p-1 text-black"
-              ><i class="bi bi-twitter"></i
-            ></a>
-          </li>
-        </ul>
-      </footer>
+  </nav>
+
+  <div class="w-100 d-inline-block p-3 bg-dark text-white">
+    <div class="text-center">
+      <h1>pagina inicial nome do site</h1>
+      <p>descriçao do site</p>
     </div>
-  </body>
+  </div>
+
+  <div class="bg-dark">
+    <div class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+      exercitationem perspiciatis eum sit fugiat culpa quaerat doloribus
+      consequuntur, nemo quos ducimus, mollitia porro quasi libero
+      distinctio sapiente reiciendis? Architecto, laboriosam!
+    </div>
+    <div class="w-100 d-inline-block p-3 bg-dark text-center mx-auto">
+      <img src="/assets/img/preferencial-horizontal-branca.png" alt="reprograme-se" height="200" />
+      <img src="/assets/img/ifes-vertical-branco.png" alt="" height="200" />
+      <img src="/assets/img/vertical-negativa.png" alt="" height="200" />
+    </div>
+    <div class="col-lg-8 border p-5 rounded-5 text-bg-light lead d-flex mx-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+      exercitationem perspiciatis eum sit fugiat culpa quaerat doloribus
+      consequuntur, nemo quos ducimus, mollitia porro quasi libero
+      distinctio sapiente reiciendis? Architecto, laboriosam! Lorem ipsum
+      dolor sit amet consectetur adipisicing elit. Laudantium quasi, culpa
+      dicta sequi velit cumque voluptas a sit dolorum nemo quas asperiores
+      officiis qui animi deleniti adipisci doloribus similique sunt! Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Delectus quos nihil
+      quibusdam earum. Labore tempora ipsum et, dicta inventore eaque modi
+      voluptatibus beatae dignissimos nulla voluptatum a totam nostrum.
+      Ratione perferendis dolores quia optio, esse beatae non recusandae
+      quasi sit quos? Odio atque laborum excepturi consectetur, nisi esse
+      obcaecati impedit?
+    </div>
+  </div>
+
+  <footer
+    class="container d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top footer-fixed-bottom">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"><svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg></a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+    </div>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3">
+        <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-whatsapp"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-facebook"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-instagram"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-linkedin"></i></a>
+      </li>
+      <li class="ms-3">
+        <a href="#" class="text-decoration-none fs-5 p-1 text-black"><i class="bi bi-twitter"></i></a>
+      </li>
+    </ul>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+</body>
+
 </html>
